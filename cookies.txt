@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+192.168.1.16	TRUE	/lab/wp-content/plugins	FALSE	1999999999	wordpress_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/wp-content/plugins	FALSE	1999999999	wordpress_sec_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/wp-admin	FALSE	1999999999	wordpress_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/wp-admin	FALSE	1999999999	wordpress_sec_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wordpress_logged_in_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wp-settings-0	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wp-settings-time-0	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wordpress_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wordpress_sec_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wordpressuser_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wordpresspass_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wp-postpass_8c070bc6ec4e8abd769d8065e218e8a3	%20
+192.168.1.16	TRUE	/lab/	FALSE	1999999999	wordpress_test_cookie	WP%20Cookie%20check
+

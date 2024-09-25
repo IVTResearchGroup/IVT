@@ -1,0 +1,53 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 25 Sep 2024 18:45:07 at http://192.168.1.16/lab/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" http://192.168.1.16/lab/ -O1 "C:\My Websites\test" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:50:53	Error: 	"Bad Request" (400) at link 192.168.1.16/lab/wp-admin/admin-ajax.php (from 192.168.1.16/lab/)
+18:50:53	Error: 	"Not Found" (404) at link 192.168.1.16/lab/wp-content/uploads/2024/08/cropped-VACT-logo_white-32x32.png (from 192.168.1.16/lab/)
+18:50:53	Error: 	"Not Found" (404) at link 192.168.1.16/lab/wp-content/uploads/2024/08/cropped-VACT-logo_white-192x192.png (from 192.168.1.16/lab/)
+18:50:53	Error: 	"Not Found" (404) at link 192.168.1.16/lab/wp-content/uploads/2024/08/cropped-VACT-logo_white-180x180.png (from 192.168.1.16/lab/)
+18:53:46	Warning: 	Retry after error -4 (Connect Error) at link localhost/lab/wp-content/uploads/2024/08/user_white-1.png (from 192.168.1.16/lab/)
+18:53:52	Warning: 	Retry after error -4 (Connect Error) at link localhost/lab/wp-content/uploads/2024/08/VACT_web-1024x207.png (from 192.168.1.16/lab/)
+18:53:52	Warning: 	Retry after error -4 (Connect Error) at link localhost/lab/wp-content/uploads/2024/08/XJTLU-logo-raw.png (from 192.168.1.16/lab/)
+18:53:58	Error: 	"Not Found" (404) at link 192.168.1.16/lab/wp-content/uploads/2024/08/cropped-VACT-logo_white-270x270.png (from 192.168.1.16/lab/wp-login.php?redirect_to=http%3A%2F%2F192.168.1.16%2Flab%2F)
+18:54:06	Error: 	"Not Found" (404) at link 192.168.1.16/lab/index.php?rest_route=/wp/v2/posts/0 (from 192.168.1.16/lab/?bp_register=1)
+18:54:06	Error: 	"Not Found" (404) at link 192.168.1.16/lab/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url (from 192.168.1.16/lab/?bp_register=1)
+18:54:06	Error: 	"Not Found" (404) at link 192.168.1.16/lab/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url&format=xml (from 192.168.1.16/lab/?bp_register=1)
+18:54:06	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=126
+18:54:06	Warning: 	File has moved from 192.168.1.16/lab/?p=126 to http://192.168.1.16/lab/?page_id=126
+18:54:20	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=130
+18:54:20	Warning: 	File has moved from 192.168.1.16/lab/?p=130 to http://192.168.1.16/lab/?page_id=130
+18:54:20	Error: 	"Not Found" (404) at link https://raw.githubusercontent.com/VACTResearchLab/Publication-Teaser/master/DataCube.jpg (from 192.168.1.16/lab/?page_id=130)
+18:54:36	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=128
+18:54:36	Warning: 	File has moved from 192.168.1.16/lab/?p=128 to http://192.168.1.16/lab/?page_id=128
+18:54:36	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=132
+18:54:36	Warning: 	File has moved from 192.168.1.16/lab/?p=132 to http://192.168.1.16/lab/?page_id=132
+18:55:09	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=134
+18:55:09	Warning: 	File has moved from 192.168.1.16/lab/?p=134 to http://192.168.1.16/lab/?page_id=134
+18:55:09	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=1334
+18:55:09	Warning: 	File has moved from 192.168.1.16/lab/?p=1334 to http://192.168.1.16/lab/?page_id=1334
+18:55:35	Warning: 	Retry after error -4 (Connect Error) at link localhost/lab/wp-content/uploads/2024/08/user_white-1.png (from 192.168.1.16/lab/)
+18:55:35	Warning: 	Retry after error -4 (Connect Error) at link localhost/lab/wp-content/uploads/2024/08/VACT_web-1024x207.png (from 192.168.1.16/lab/)
+18:55:35	Warning: 	Retry after error -4 (Connect Error) at link localhost/lab/wp-content/uploads/2024/08/XJTLU-logo-raw.png (from 192.168.1.16/lab/)
+18:55:35	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=1138
+18:55:35	Warning: 	File has moved from 192.168.1.16/lab/?p=1138 to http://192.168.1.16/lab/?page_id=1138
+18:55:35	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=1328
+18:55:35	Warning: 	File has moved from 192.168.1.16/lab/?p=1328 to http://192.168.1.16/lab/?page_id=1328
+18:55:37	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=1207
+18:55:37	Warning: 	File has moved from 192.168.1.16/lab/?p=1207 to http://192.168.1.16/lab/?page_id=1207
+18:55:37	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=1329
+18:55:37	Warning: 	File has moved from 192.168.1.16/lab/?p=1329 to http://192.168.1.16/lab/?page_id=1329
+18:55:37	Warning: 	Moved Permanently for 192.168.1.16/lab/?p=1333
+18:55:37	Warning: 	File has moved from 192.168.1.16/lab/?p=1333 to http://192.168.1.16/lab/?page_id=1333
+18:55:37	Error: 	"Connect Error" (-4) after 2 retries at link localhost/lab/wp-content/uploads/2024/08/user_white-1.png (from 192.168.1.16/lab/)
+18:55:37	Error: 	"Connect Error" (-4) after 2 retries at link localhost/lab/wp-content/uploads/2024/08/VACT_web-1024x207.png (from 192.168.1.16/lab/)
+18:55:37	Error: 	"Connect Error" (-4) after 2 retries at link localhost/lab/wp-content/uploads/2024/08/XJTLU-logo-raw.png (from 192.168.1.16/lab/)
+18:55:37	Warning: 	Found for 192.168.1.16/lab/?page_id=1328
+18:55:37	Warning: 	File has moved from 192.168.1.16/lab/?page_id=1328 to http://192.168.1.16/lab
+
+HTTrack Website Copier/3.49-2 mirror complete in 10 minutes 30 seconds : 294 links scanned, 263 files written (23242009 bytes overall) [23352797 bytes received at 37067 bytes/sec], 2.4 requests per connection
+(12 errors, 30 warnings, 0 messages)
