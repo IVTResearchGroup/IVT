@@ -153,6 +153,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <script src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script src="wp-content/plugins/iks-menu/assets/js/publicc1d8.js?ver=1.11.3" id="iksm-public-script-js"></script>
 <script src="wp-content/plugins/iks-menu/assets/js/menuc1d8.js?ver=1.11.3" id="iksm-menu-script-js"></script>
+<script src="./publications.js"></script>
 <script src="wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.minb5c8.js?ver=3.22.2" id="font-awesome-4-shim-js"></script>
 <script id="ecs_ajax_load-js-extra">
 var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-ajax.php","posts":"{\"page_id\":130,\"error\":\"\",\"m\":\"\",\"p\":130,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
@@ -195,11 +196,16 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 	<!-- Fonts Plugin CSS -->
 	</head>
 
+
+
+<!-- 显示 publications 的列表
+<div id="publication-list">
+    <!-- Publications will be dynamically inserted here -->
+</div> -->
+
+
 <body class="bp-nouveau page-template-default page page-id-130 admin-bar no-customize-support wp-custom-logo wp-embed-responsive elementor-default elementor-kit-17 elementor-page elementor-page-130">
-		<div id="wpadminbar" class="nojq nojs">
-						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="工具栏">
-				<ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu"><li role='group' id='wp-admin-bar-wp-logo' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" role="menuitem" aria-expanded="false"><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">关于 WordPress</span></div><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li role='group' id='wp-admin-bar-wporg'><a class='ab-item' role="menuitem" href='https://cn.wordpress.org/'>WordPress.org</a></li><li role='group' id='wp-admin-bar-documentation'><a class='ab-item' role="menuitem" href='https://wordpress.org/documentation/'>文档</a></li><li role='group' id='wp-admin-bar-learn'><a class='ab-item' role="menuitem" href='https://learn.wordpress.org/'>学习 WordPress</a></li><li role='group' id='wp-admin-bar-support-forums'><a class='ab-item' role="menuitem" href='https://cn.wordpress.org/support/forums/'>支持</a></li><li role='group' id='wp-admin-bar-feedback'><a class='ab-item' role="menuitem" href='https://cn.wordpress.org/support/forum/suggestions/'>反馈</a></li></ul></div></li><li role='group' id='wp-admin-bar-bp-login'><a class='ab-item' role="menuitem" href='wp-login88d5.html?redirect_to=http%3A%2F%2F192.168.1.16%2Flab%2F%3Fpage_id%3D130'>Log In</a></li><li role='group' id='wp-admin-bar-bp-register'><a class='ab-item' role="menuitem" href='index429e.html?bp_register=1'>Register</a></li><li role='group' id='wp-admin-bar-ss-admin-bar'><a class='ab-item' role="menuitem" href='wp-login8bc2.html?page=simply-static-generate' title='Static Generation: Waiting..'>Static Generation: Waiting..</a></li><li role='group' id='wp-admin-bar-elementor_inspector' class="menupop"><div class="ab-item ab-empty-item" role="menuitem" aria-expanded="false">Elementor Debugger</div><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-elementor_inspector-default' class="ab-submenu"><li role='group' id='wp-admin-bar-elementor_inspector_theme' class="menupop"><div class="ab-item ab-empty-item" role="menuitem" aria-expanded="false"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Theme</div><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-elementor_inspector_theme-default' class="ab-submenu"><li role='group' id='wp-admin-bar-elementor_inspector_log_theme_0'><div class="ab-item ab-empty-item" role="menuitem" target='_blank'>Template File: No Templates for condition > C:\Program Files\Apache24\htdocs\lab/wp-includes/template-canvas.php</div></li></ul></div></li></ul></div></li></ul><ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li role='group' id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1" role="menuitem"><form action="http://192.168.1.16/lab/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">搜索</label><input type="submit" class="adminbar-button" value="搜索" /></form></div></li></ul>			</div>
-		</div>
+		
 
 		
 <div class="wp-site-blocks"><header class="wp-block-template-part">
@@ -276,6 +282,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 			class="jet-select__control depth-0"
 			name="category"
 			tabindex="0"			aria-label="Publications Filter"
+			id="filterA" onchange="updateFilterB()"
 		>
 					<option value="">Select&#8230;</option>
 		
@@ -286,35 +293,31 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 				data-counter-suffix=""
 							>All</option>
 						<option
-				value="18"
+				value="authors"
 				data-label="Author"
 				data-counter-prefix=""
 				data-counter-suffix=""
 							>Author</option>
 						<option
-				value="16"
-				data-label="Paper Property"
+				value="journals"
+				data-label="paper-property"
 				data-counter-prefix=""
 				data-counter-suffix=""
 							>Paper Property</option>
 						<option
-				value="17"
+				value="years"
 				data-label="Publication Year"
 				data-counter-prefix=""
 				data-counter-suffix=""
 							>Publication Year</option>
 			</select>
 	</div>
-<div class="jet-select" data-query-type="tax_query" data-query-var="category" data-smart-filter="select" data-filter-id="481" data-apply-type="ajax" data-content-provider="epro-posts" data-additional-providers="" data-query-id="default" data-active-label="Publications Filter" data-layout-options="{&quot;show_label&quot;:&quot;&quot;,&quot;display_options&quot;:{&quot;show_items_label&quot;:false,&quot;show_decorator&quot;:false,&quot;filter_image_size&quot;:&quot;full&quot;,&quot;show_counter&quot;:false}}" data-query-var-suffix="" data-hierarchical="1">
-				<select
-			class="jet-select__control depth-1"
-			name="category"
-			tabindex="0"			aria-label="Publications Filter"
-		>
-					<option value="">Select&#8230;</option>
-		
-		</select>
-	</div>
+<div class="jet-select" data-query-type="tax_query" data-query-var="category" data-smart-filter="select" data-filter-id="481" data-apply-type="ajax" data-content-provider="epro-posts" data-additional-providers="" data-query-id="default" data-active-label="Publications Filter">
+        <select class="jet-select__control depth-1" name="category" tabindex="0" aria-label="Publications Filter" id="filterB" onchange="filterPublications()">
+            <option value="">Select…</option>
+            <!-- 动态加载的选项将显示在这里 -->
+        </select>
+    </div>
 </div>
 </div>		</div>
 				</div>
@@ -355,7 +358,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 		</section>
 				<div class="elementor-element elementor-element-a69a51b elementor-widget elementor-widget-posts" data-id="a69a51b" data-element_type="widget" data-settings="{&quot;full_content_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:40,&quot;sizes&quot;:[]}}" data-widget_type="posts.full_content">
 				<div class="elementor-widget-container">
-					<div class="elementor-posts-container elementor-posts elementor-posts--skin-full_content elementor-grid">
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-full_content elementor-grid" id="publication-list">
 				<article class="elementor-post elementor-grid-item post-1100 post type-post status-publish format-standard hentry category-34 category-all category-conference-papers category-fuqi-xie category-hai-ning-liang category-journal-articles category-lingyun-yu category-lixiang-zhao category-tobias-isenberg tag-gallery tag-publications">
 				<div class="elementor-post__text">
 		<div class="elementor-post__content"><style>.elementor-1100 .elementor-element.elementor-element-a099429{columns:1;color:#000000;font-family:"Saira Extra Condensed", Sans-serif;font-size:32px;font-weight:600;}.elementor-1100 .elementor-element.elementor-element-a099429 > .elementor-widget-container{margin:-40px 0px 0px 0px;}.elementor-1100 .elementor-element.elementor-element-3c948c6{columns:1;color:#444444;font-family:"Arial", Sans-serif;font-size:16px;font-weight:400;}.elementor-1100 .elementor-element.elementor-element-3c948c6 > .elementor-widget-container{margin:-70px 0px 0px 0px;}.elementor-1100 .elementor-element.elementor-element-a781287{columns:1;color:#444444;font-family:"Arial", Sans-serif;font-size:16px;font-weight:400;}.elementor-1100 .elementor-element.elementor-element-a781287 > .elementor-widget-container{margin:-65px 0px 0px 0px;}@media(min-width:768px){.elementor-1100 .elementor-element.elementor-element-d4e70c1{width:30%;}.elementor-1100 .elementor-element.elementor-element-aaeb6c7{width:70%;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="1100" class="elementor elementor-1100" data-elementor-post-type="post">
@@ -398,478 +401,11 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 				</div>
 		</div>		</div>
 				</article>
-				<article class="elementor-post elementor-grid-item post-1979 post type-post status-publish format-standard hentry category-34 category-lingyun-yu category-shuqi-he tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-19a1414 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19a1414" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-d4e70c1" data-id="d4e70c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-                                            <img fetchpriority="high" decoding="async" class="attachment-large size-large wp-image-155" alt="" src="#">
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-<div class="elementor-column elementor-col-70 elementor-inner-column elementor-element elementor-element-aaeb6c7" data-id="aaeb6c7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a099429 elementor-widget elementor-widget-text-editor" data-id="a099429" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -25px;">
-<p><span style="color: #000000; font-family: Saira Extra Condensed; font-size: 32px; font-weight: 600;"><strong>Charting Beyond Sight with DataStory: Sensory Substitution and Storytelling in Visual Literacy Education for Visually Impaired Children</strong></span></p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-3c948c6 elementor-widget elementor-widget-text-editor" data-id="3c948c6" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">Shuqi He, Lingyun Yu</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-a781287 elementor-widget elementor-widget-text-editor" data-id="a781287" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">CHI: Late-Breaking Work, ACM CHI conference on Human Factors in Computing Systems, 2024</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container" style="display: flex; align-items: center;">
-                                            <a href="#" target="_blank" style="text-decoration: none;" rel="noopener"><br />
-                                                <button style="background-color: #000000; color: #ffffff; font-size: 24px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                    <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>description</span><br />
-                                                    <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>PDF</span><br />
-                                                </button><br />
-                                            </a><br />
-                                            <button onclick="copyToClipboard('')" style="background-color: #000000; color: #ffffff; font-size: 24px; margin-left: 10px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>content_copy</span><br />
-                                                <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>BIB</span><br />
-                                            </button>
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-</p></div>
-</section></div>
-<p>                <script>
-                function copyToClipboard(text) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = text;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    alert('BIB info copied to clipboard!');
-                }
-                </script></p>
-		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-1974 post type-post status-publish format-standard hentry category-34 category-hai-ning-liang category-haonan-yao category-kaiwen-li category-lingyun-yu category-luyan-jiang category-nan-xiang category-shuqi-he category-yue-li tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-19a1414 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19a1414" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-d4e70c1" data-id="d4e70c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-                                            <img fetchpriority="high" decoding="async" class="attachment-large size-large wp-image-155" alt="" src="../../raw.githubusercontent.com/VACTResearchLab/Publication-Teaser/master/DataCube.jpg">
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-<div class="elementor-column elementor-col-70 elementor-inner-column elementor-element elementor-element-aaeb6c7" data-id="aaeb6c7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a099429 elementor-widget elementor-widget-text-editor" data-id="a099429" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -25px;">
-<p><span style="color: #000000; font-family: Saira Extra Condensed; font-size: 32px; font-weight: 600;"><strong>Data Cubes in Hand: A Design Space of Tangible Cubes for Visualizing 3D Spatio-Temporal Data in Mixed Reality</strong></span></p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-3c948c6 elementor-widget elementor-widget-text-editor" data-id="3c948c6" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">Shuqi He, Haonan Yao, Luyan Jiang, Kaiwen Li, Nan Xiang, Yue Li, Hai-Ning Liang, Lingyun Yu</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-a781287 elementor-widget elementor-widget-text-editor" data-id="a781287" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">CHI:<b><i style="color: #8c0000;"> ACM CHI conference on Human Factors in Computing Systems</i></b>, 2024</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container" style="display: flex; align-items: center;">
-                                            <a href="https://dl.acm.org/doi/10.1145/3613904.3642740" target="_blank" style="text-decoration: none;" rel="noopener"><br />
-                                                <button style="background-color: #000000; color: #ffffff; font-size: 24px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                    <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>description</span><br />
-                                                    <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>PDF</span><br />
-                                                </button><br />
-                                            </a><br />
-                                            <button onclick="copyToClipboard('@inproceedings{10.1145/3613904.3642740,
-author = {He, Shuqi and Yao, Haonan and Jiang, Luyan and Li, Kaiwen and Xiang, Nan and Li, Yue and Liang, Hai-Ning and Yu, Lingyun},
-title = {Data Cubes in Hand: A Design Space of Tangible Cubes for Visualizing 3D Spatio-Temporal Data in Mixed Reality},
-year = {2024},
-isbn = {9798400703300},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3613904.3642740},
-doi = {10.1145/3613904.3642740},
-abstract = {Tangible interfaces in mixed reality (MR) environments allow for intuitive data interactions. Tangible cubes, with their rich interaction affordances, high maneuverability, and stable structure, are particularly well-suited for exploring multi-dimensional data types. However, the design potential of these cubes is underexplored. This study introduces a design space for tangible cubes in MR, focusing on interaction space, visualization space, sizes, and multiplicity. Using spatio-temporal data, we explored the interaction affordances of these cubes in a workshop (N=24). We identified unique interactions like rotating, tapping, and stacking, which are linked to augmented reality (AR) visualization commands. Integrating user-identified interactions, we created a design space for tangible-cube interactions and visualization. A prototype visualizing global health spending with small cubes was developed and evaluated, supporting both individual and combined cube manipulation. This research enhances our grasp of tangible interaction in MR, offering insights for future design and application in diverse data contexts.},
-booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
-articleno = {209},
-numpages = {21},
-keywords = {mixed reality, spatio-temporal data, tangible interaction},
-location = {Honolulu, HI, USA},
-series = {CHI '24}
-}')" style="background-color: #000000; color: #ffffff; font-size: 24px; margin-left: 10px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>content_copy</span><br />
-                                                <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>BIB</span><br />
-                                            </button>
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-</p></div>
-</section></div>
-<p>                <script>
-                function copyToClipboard(text) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = text;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    alert('BIB info copied to clipboard!');
-                }
-                </script></p>
-		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-1975 post type-post status-publish format-standard hentry category-34 category-hai-ning-liang category-haonan-yao category-lingyun-yu category-lixiang-zhao category-yu-liu category-yue-li tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-19a1414 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19a1414" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-d4e70c1" data-id="d4e70c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-                                            <img fetchpriority="high" decoding="async" class="attachment-large size-large wp-image-155" alt="" src="#">
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-<div class="elementor-column elementor-col-70 elementor-inner-column elementor-element elementor-element-aaeb6c7" data-id="aaeb6c7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a099429 elementor-widget elementor-widget-text-editor" data-id="a099429" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -25px;">
-<p><span style="color: #000000; font-family: Saira Extra Condensed; font-size: 32px; font-weight: 600;"><strong>Exploring Embodied Asymmetric Two-Handed Interactions for Immersive Data Exploration</strong></span></p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-3c948c6 elementor-widget elementor-widget-text-editor" data-id="3c948c6" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">Haonan Yao, Lixiang Zhao, Hai-Ning Liang, Yu Liu, Yue Li, Lingyun Yu</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-a781287 elementor-widget elementor-widget-text-editor" data-id="a781287" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">CHI: Late-Breaking Work, ACM CHI conference on Human Factors in Computing Systems, 2024</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container" style="display: flex; align-items: center;">
-                                            <a href="#" target="_blank" style="text-decoration: none;" rel="noopener"><br />
-                                                <button style="background-color: #000000; color: #ffffff; font-size: 24px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                    <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>description</span><br />
-                                                    <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>PDF</span><br />
-                                                </button><br />
-                                            </a><br />
-                                            <button onclick="copyToClipboard('')" style="background-color: #000000; color: #ffffff; font-size: 24px; margin-left: 10px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>content_copy</span><br />
-                                                <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>BIB</span><br />
-                                            </button>
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-</p></div>
-</section></div>
-<p>                <script>
-                function copyToClipboard(text) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = text;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    alert('BIB info copied to clipboard!');
-                }
-                </script></p>
-		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-1978 post type-post status-publish format-standard hentry category-34 category-fuqi-xie category-hai-ning-liang category-lingyun-yu category-lixiang-zhao category-tobias-isenberg tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-19a1414 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19a1414" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-d4e70c1" data-id="d4e70c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-                                            <img fetchpriority="high" decoding="async" class="attachment-large size-large wp-image-155" alt="" src="#">
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-<div class="elementor-column elementor-col-70 elementor-inner-column elementor-element elementor-element-aaeb6c7" data-id="aaeb6c7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a099429 elementor-widget elementor-widget-text-editor" data-id="a099429" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -25px;">
-<p><span style="color: #000000; font-family: Saira Extra Condensed; font-size: 32px; font-weight: 600;"><strong>MeTACAST: Target- and Context-aware Spatial Selection in VR</strong></span></p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-3c948c6 elementor-widget elementor-widget-text-editor" data-id="3c948c6" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">Lixiang Zhao, Tobias Isenberg, Fuqi Xie, Hai-Ning. Liang, Lingyun Yu</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-a781287 elementor-widget elementor-widget-text-editor" data-id="a781287" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">VIS: IEEE Transactions on Visualization and Computer Graphics, 2024</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container" style="display: flex; align-items: center;">
-                                            <a href="#" target="_blank" style="text-decoration: none;" rel="noopener"><br />
-                                                <button style="background-color: #000000; color: #ffffff; font-size: 24px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                    <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>description</span><br />
-                                                    <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>PDF</span><br />
-                                                </button><br />
-                                            </a><br />
-                                            <button onclick="copyToClipboard('')" style="background-color: #000000; color: #ffffff; font-size: 24px; margin-left: 10px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>content_copy</span><br />
-                                                <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>BIB</span><br />
-                                            </button>
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-</p></div>
-</section></div>
-<p>                <script>
-                function copyToClipboard(text) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = text;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    alert('BIB info copied to clipboard!');
-                }
-                </script></p>
-		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-495 post type-post status-publish format-standard hentry category-40 category-all category-conference-papers category-hai-ning-liang category-journal-articles category-kemu-xu category-lingyun-yu category-yue-li category-yushi-wei tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-post__content"><style>.elementor-495 .elementor-element.elementor-element-1f90d59{columns:1;color:#000000;font-family:"Saira Extra Condensed", Sans-serif;font-size:32px;font-weight:600;}.elementor-495 .elementor-element.elementor-element-1f90d59 > .elementor-widget-container{margin:-40px 0px 0px 0px;}.elementor-495 .elementor-element.elementor-element-15bd98e{columns:1;color:#444444;font-family:"Arial", Sans-serif;font-size:16px;font-weight:400;}.elementor-495 .elementor-element.elementor-element-15bd98e > .elementor-widget-container{margin:-70px 0px 0px 0px;}.elementor-495 .elementor-element.elementor-element-b858f36{columns:1;color:#444444;font-family:"Arial", Sans-serif;font-size:16px;font-weight:400;}.elementor-495 .elementor-element.elementor-element-b858f36 > .elementor-widget-container{margin:-65px 0px 0px 0px;}@media(min-width:768px){.elementor-495 .elementor-element.elementor-element-cee190d{width:30%;}.elementor-495 .elementor-element.elementor-element-7fbb163{width:70%;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="495" class="elementor elementor-495" data-elementor-post-type="post">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-2b054c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b054c5" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-46d6d1a" data-id="46d6d1a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-e5d4c51 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5d4c51" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cee190d" data-id="cee190d" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-aa9e910 elementor-widget elementor-widget-image" data-id="aa9e910" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-													<img decoding="async" src="../../yulingyun.com/wp-content/uploads/2024/07/Wei_2024_EMD-1024x495.jpg" title="" alt="" loading="lazy" />													</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7fbb163" data-id="7fbb163" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-1f90d59 elementor-widget elementor-widget-text-editor" data-id="1f90d59" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><b>Exploring and Modeling Directional Effects on Steering Behavior in Virtual Reality</b></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-15bd98e elementor-widget elementor-widget-text-editor" data-id="15bd98e" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Yushi Wei, Kemu Xu, Yue Li, Lingyun Yu, Hai-Ning Liang</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-b858f36 elementor-widget elementor-widget-text-editor" data-id="b858f36" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>ISMAR: <em><strong>IEEE Transactions on Visualization and Computer Graphics</strong></em>, 2025</p>						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-		</div>		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-512 post type-post status-publish format-standard hentry category-40 category-all category-conference-papers category-fuqi-xie category-hai-ning-liang category-journal-articles category-lingyun-yu category-lixiang-zhao category-tobias-isenberg tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-post__content"><style>.elementor-512 .elementor-element.elementor-element-31e0173{columns:1;color:#000000;font-family:"Saira Extra Condensed", Sans-serif;font-size:32px;font-weight:600;}.elementor-512 .elementor-element.elementor-element-31e0173 > .elementor-widget-container{margin:-40px 0px 0px 0px;}.elementor-512 .elementor-element.elementor-element-a6a6407{columns:1;color:#444444;font-family:"Arial", Sans-serif;font-size:16px;font-weight:400;}.elementor-512 .elementor-element.elementor-element-a6a6407 > .elementor-widget-container{margin:-70px 0px 0px 0px;}.elementor-512 .elementor-element.elementor-element-8b9ff23{columns:1;color:#444444;font-family:"Arial", Sans-serif;font-size:16px;font-weight:400;}.elementor-512 .elementor-element.elementor-element-8b9ff23 > .elementor-widget-container{margin:-65px 0px 0px 0px;}@media(min-width:768px){.elementor-512 .elementor-element.elementor-element-0943dac{width:30%;}.elementor-512 .elementor-element.elementor-element-a911054{width:70%;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="512" class="elementor elementor-512" data-elementor-post-type="post">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-d295b79 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d295b79" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b26c658" data-id="b26c658" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-d9875b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d9875b7" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0943dac" data-id="0943dac" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-065ecfa elementor-widget elementor-widget-image" data-id="065ecfa" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-													<img decoding="async" src="../../yulingyun.com/wp-content/uploads/2024/07/SpatialTouch_teaser-2-1024x634.jpg" title="" alt="" loading="lazy" />													</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a911054" data-id="a911054" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-31e0173 elementor-widget elementor-widget-text-editor" data-id="31e0173" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><b>SpatialTouch: Exploring Spatial Data Visualizations in Cross-reality</b></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-a6a6407 elementor-widget elementor-widget-text-editor" data-id="a6a6407" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Lixiang Zhao, Tobias Isenberg, Fuqi Xie, Hai-Ning. Liang, Lingyun Yu</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-8b9ff23 elementor-widget elementor-widget-text-editor" data-id="8b9ff23" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>VIS: <em><strong>IEEE Transactions on Visualization and Computer Graphics</strong></em>, 2025</p>						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-		</div>		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-1977 post type-post status-publish format-standard hentry category-40 category-hai-ning-liang category-kemu-xu category-lingyun-yu category-yue-li category-yushi-wei tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-19a1414 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19a1414" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-d4e70c1" data-id="d4e70c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-                                            <img fetchpriority="high" decoding="async" class="attachment-large size-large wp-image-155" alt="" src="#">
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-<div class="elementor-column elementor-col-70 elementor-inner-column elementor-element elementor-element-aaeb6c7" data-id="aaeb6c7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a099429 elementor-widget elementor-widget-text-editor" data-id="a099429" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -25px;">
-<p><span style="color: #000000; font-family: Saira Extra Condensed; font-size: 32px; font-weight: 600;"><strong>Exploring and Modeling Directional Effects on Steering Behavior in Virtual Reality</strong></span></p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-3c948c6 elementor-widget elementor-widget-text-editor" data-id="3c948c6" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">Yushi Wei, Kemu Xu, Yue Li, Lingyun Yu, Hai-Ning Liang</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-a781287 elementor-widget elementor-widget-text-editor" data-id="a781287" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">ISMAR:<b><i style="color: #8c0000;"> IEEE Transactions on Visualization and Computer Graphics</i></b>, 2025</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container" style="display: flex; align-items: center;">
-                                            <a href="#" target="_blank" style="text-decoration: none;" rel="noopener"><br />
-                                                <button style="background-color: #000000; color: #ffffff; font-size: 24px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                    <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>description</span><br />
-                                                    <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>PDF</span><br />
-                                                </button><br />
-                                            </a><br />
-                                            <button onclick="copyToClipboard('')" style="background-color: #000000; color: #ffffff; font-size: 24px; margin-left: 10px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>content_copy</span><br />
-                                                <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>BIB</span><br />
-                                            </button>
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-</p></div>
-</section></div>
-<p>                <script>
-                function copyToClipboard(text) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = text;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    alert('BIB info copied to clipboard!');
-                }
-                </script></p>
-		</div>
-				</article>
-				<article class="elementor-post elementor-grid-item post-1976 post type-post status-publish format-standard hentry category-40 category-fuqi-xie category-hai-ning-liang category-lingyun-yu category-lixiang-zhao category-tobias-isenberg tag-gallery tag-publications">
-				<div class="elementor-post__text">
-		<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-19a1414 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19a1414" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-d4e70c1" data-id="d4e70c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-                                            <img fetchpriority="high" decoding="async" class="attachment-large size-large wp-image-155" alt="" src="#">
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-<div class="elementor-column elementor-col-70 elementor-inner-column elementor-element elementor-element-aaeb6c7" data-id="aaeb6c7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a099429 elementor-widget elementor-widget-text-editor" data-id="a099429" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -25px;">
-<p><span style="color: #000000; font-family: Saira Extra Condensed; font-size: 32px; font-weight: 600;"><strong>SpatialTouch: Exploring Spatial Data Visualizations in Cross-reality</strong></span></p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-3c948c6 elementor-widget elementor-widget-text-editor" data-id="3c948c6" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">Lixiang Zhao, Tobias Isenberg, Fuqi Xie, Hai-Ning. Liang, Lingyun Yu</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-a781287 elementor-widget elementor-widget-text-editor" data-id="a781287" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="margin-top: -45px;">
-<p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">VIS:<b><i style="color: #8c0000;"> IEEE Transactions on Visualization and Computer Graphics</i></b>, 2025</p>
-</p></div>
-</p></div>
-<div class="elementor-element elementor-element-4004391 elementor-widget elementor-widget-image" data-id="4004391" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container" style="display: flex; align-items: center;">
-                                            <a href="#" target="_blank" style="text-decoration: none;" rel="noopener"><br />
-                                                <button style="background-color: #000000; color: #ffffff; font-size: 24px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                    <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>description</span><br />
-                                                    <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>PDF</span><br />
-                                                </button><br />
-                                            </a><br />
-                                            <button onclick="copyToClipboard('')" style="background-color: #000000; color: #ffffff; font-size: 24px; margin-left: 10px; margin-top: -50px; padding: 4px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center;"><br />
-                                                <span class='material-icons icon-description' style='font-size: 24px; margin-right: 10px; color: #ffffff;'>content_copy</span><br />
-                                                <span style='font-family: "Saira Extra Condensed", sans-serif; font-weight: 600; font-size: 24px;'>BIB</span><br />
-                                            </button>
-                                        </div>
-</p></div>
-</p></div>
-</p></div>
-</p></div>
-</section></div>
-<p>                <script>
-                function copyToClipboard(text) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = text;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    alert('BIB info copied to clipboard!');
-                }
-                </script></p>
-		</div>
-				</article>
+				
+
+
+
+
 				</div>
 		
 				</div>
@@ -1048,6 +584,273 @@ var JetSmartFilterSettings = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/a
 				jQuery('input[name="um_request"]').val('');
 			});
 		</script>
+		
+		
+		
+<script>
+    // 直接在 HTML 中定义 publications 数据
+   
+
+   // 动态生成并插入 HTML 内容
+    const publicationList = document.getElementById('publication-list');
+
+    publications.forEach(publication => {
+        // 创建 article 元素
+        const article = document.createElement('article');
+        article.classList.add('elementor-post', 'elementor-grid-item', 'post', 'type-post', 'status-publish', 'format-standard');
+
+        // 生成文章内容的 HTML 结构，保留原有的结构和类名，并调整列的宽度
+        article.innerHTML = `
+            <div class="elementor-post__text">
+                <div class="elementor-post__content">
+                    <div data-elementor-type="wp-post" class="elementor elementor-1100" data-elementor-post-type="post">
+                        <section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <!-- 图片列，宽度为30% -->
+                                <div class="elementor-column elementor-col-30 elementor-inner-column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-widget elementor-widget-image">
+                                            <div class="elementor-widget-container">
+                                                <img src="${publication.image}" class="attachment-large size-large" alt="${publication.title}" style="width: 100%; height: auto;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 文字列，宽度为70% -->
+                                <div class="elementor-column elementor-col-70 elementor-inner-column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                            <div class="elementor-widget-container" style="margin-top: -25px;">
+                                                <p><span style="color: #000000; font-family: 'Saira Extra Condensed'; font-size: 32px; font-weight: 600;">
+                                                    <a href="${publication.link}" style="color: #000000; text-decoration: none;"><strong>${publication.title}</strong></a>
+                                                </span></p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                            <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                    ${publication.authors.join(', ')}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                            <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                    ${publication.journal}, ${publication.year}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        `;
+  
+          // 将 article 插入到 publication-list 容器中
+          publicationList.appendChild(article);
+      });
+  </script>
+		
+		
+		
+ <script>
+    // 模拟一些 publications 数据
+    
+
+    // 构建筛选数据：提取 unique authors, paper properties (journal) 和 publication years
+    const filterData = {
+        authors: [...new Set(publications.flatMap(pub => pub.authors))],
+        journals: [...new Set(publications.map(pub => pub.journal))],
+        years: [...new Set(publications.map(pub => pub.year))]
+    };
+
+
+    // 根据菜单A的选择更新菜单B的选项
+    function updateFilterB() {
+        const filterAValue = document.getElementById('filterA').value; // 获取下拉菜单A的值
+        const filterB = document.getElementById('filterB'); // 获取下拉菜单B
+
+        // 清空下拉菜单B的内容
+        filterB.innerHTML = '<option value="">Select…</option>';
+
+        // 根据选择的A类别动态填充B的选项
+        if (filterAValue === 'authors') {
+            filterData.authors.forEach(author => {
+                const option = document.createElement('option');
+                option.value = author;
+                option.textContent = author;
+                filterB.appendChild(option);
+            });
+        } else if (filterAValue === 'journals') {
+            filterData.journals.forEach(journal => {
+                const option = document.createElement('option');
+                option.value = journal;
+                option.textContent = journal;
+                filterB.appendChild(option);
+            });
+        } else if (filterAValue === 'years') {
+            filterData.years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                filterB.appendChild(option);
+            });
+        }
+    }
+
+    // 筛选功能：根据 filterB 的值过滤 publications
+    function filterPublications() {
+        const filterAValue = document.getElementById('filterA').value; // 获取A的筛选类别
+        const filterBValue = document.getElementById('filterB').value; // 获取B的具体筛选条件
+        const publicationList = document.getElementById('publication-list'); // 获取展示 publication 的容器
+
+        // 清空 publication 容器
+        publicationList.innerHTML = '';
+
+        // 过滤 publications 数据并根据筛选条件展示结果
+        const filteredPublications = publications.filter(publication => {
+            if (filterAValue === 'authors') {
+                return publication.authors.includes(filterBValue);
+            } else if (filterAValue === 'journals') {
+                return publication.journal === filterBValue;
+            } else if (filterAValue === 'years') {
+                return publication.year == filterBValue;
+            }
+            return true;
+        });
+
+        // 动态插入过滤后的 publication
+        filteredPublications.forEach(publication => {
+            const article = document.createElement('article');
+            article.classList.add('elementor-post', 'elementor-grid-item', 'post', 'type-post', 'status-publish', 'format-standard');
+
+            article.innerHTML = `
+                <div class="elementor-post__text">
+                    <div class="elementor-post__content">
+                        <div data-elementor-type="wp-post" class="elementor elementor-1100" data-elementor-post-type="post">
+                            <section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-30 elementor-inner-column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-widget elementor-widget-image">
+                                                <div class="elementor-widget-container">
+                                                    <img src="${publication.image}" class="attachment-large size-large" alt="${publication.title}" style="width: 100%; height: auto;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-70 elementor-inner-column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                                <div class="elementor-widget-container" style="margin-top: -25px;">
+                                                    <p><span style="color: #000000; font-family: 'Saira Extra Condensed'; font-size: 32px; font-weight: 600;">
+                                                        <a href="${publication.link}" style="color: #000000; text-decoration: none;"><strong>${publication.title}</strong></a>
+                                                    </span></p>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                                <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                    <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                        ${publication.authors.join(', ')}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                                <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                    <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                        ${publication.journal}, ${publication.year}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            `;
+            publicationList.appendChild(article);
+        });
+    }
+
+    // 搜索功能
+    function performSearch() {
+        const query = document.getElementById('searchBox').value.toLowerCase();
+        const publicationList = document.getElementById('publication-list'); // 获取展示 publication 的容器
+
+        // 清空 publication 容器
+        publicationList.innerHTML = '';
+
+        // 过滤 publications 数据并根据搜索条件展示结果
+        const filteredPublications = publications.filter(publication => {
+            return (
+                publication.title.toLowerCase().includes(query) ||
+                publication.authors.some(author => author.toLowerCase().includes(query))
+            );
+        });
+
+        // 动态插入过滤后的 publication
+        filteredPublications.forEach(publication => {
+            const article = document.createElement('article');
+            article.classList.add('elementor-post', 'elementor-grid-item', 'post', 'type-post', 'status-publish', 'format-standard');
+
+            article.innerHTML = `
+                <div class="elementor-post__text">
+                    <div class="elementor-post__content">
+                        <div data-elementor-type="wp-post" class="elementor elementor-1100" data-elementor-post-type="post">
+                            <section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-30 elementor-inner-column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-widget elementor-widget-image">
+                                                <div class="elementor-widget-container">
+                                                    <img src="${publication.image}" class="attachment-large size-large" alt="${publication.title}" style="width: 100%; height: auto;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-70 elementor-inner-column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                                <div class="elementor-widget-container" style="margin-top: -25px;">
+                                                    <p><span style="color: #000000; font-family: 'Saira Extra Condensed'; font-size: 32px; font-weight: 600;">
+                                                        <a href="${publication.link}" style="color: #000000; text-decoration: none;"><strong>${publication.title}</strong></a>
+                                                    </span></p>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                                <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                    <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                        ${publication.authors.join(', ')}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                                <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                    <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                        ${publication.journal}, ${publication.year}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            `;
+            publicationList.appendChild(article);
+        });
+    }
+</script>
+
+		
+		
 	</body>
 
 <!-- Mirrored from 192.168.1.16/lab/?page_id=130 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Sep 2024 10:52:38 GMT -->
