@@ -201,7 +201,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 <!-- 显示 publications 的列表
 <div id="publication-list">
     <!-- Publications will be dynamically inserted here -->
-</div> -->
+</div>
 
 
 <body class="bp-nouveau page-template-default page page-id-130 admin-bar no-customize-support wp-custom-logo wp-embed-responsive elementor-default elementor-kit-17 elementor-page elementor-page-130">
@@ -287,7 +287,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 					<option value="">Select&#8230;</option>
 		
 					<option
-				value="1"
+				value="all"
 				data-label="All"
 				data-counter-prefix=""
 				data-counter-suffix=""
@@ -313,7 +313,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 			</select>
 	</div>
 <div class="jet-select" >
-        <select class="jet-select__control depth-1" name="category" tabindex="0" aria-label="Publications Filter" id="filterB" onchange="filterPublications()">
+        <select class="jet-select__control depth-1" name="category" tabindex="0" aria-label="Publications Filter" id="filterB" onchange="filterPublications()" style="width: 300px;">
             <option value="">Select…</option>
             <!-- 动态加载的选项将显示在这里 -->
         </select>
@@ -335,6 +335,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 	<div class="jet-search-filter__input-wrapper">
 		<input
 			class="jet-search-filter__input"
+			id="searchBox"
 			type="search"
 			autocomplete="off"
 			name="query"
@@ -345,9 +346,10 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 			</div>
 			<button
 			type="button"
-			class="jet-search-filter__submit apply-filters__button"
+			id="searchButton"
+			class="jet-search-filter__submit"
 			tabindex="0"		>
-			<i class="fa fa-arrow-right"></i>			<span class="jet-search-filter__submit-text"></span>
+			<i class="fa fa-arrow-right"></i>			
 					</button>
 	</div>
 </div>		</div>
@@ -420,7 +422,7 @@ var ecs_ajax_params = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/admin-aj
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5a4edb0 elementor-absolute elementor-widget elementor-widget-heading" data-id="5a4edb0" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"><a href="index1059.html?page_id=1138">Go to all publications →</a></h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default"><a href="indexe2d4.html">Go to all publications →</a></h2>		</div>
 				</div>
 					</div>
 		</div>
@@ -675,8 +677,13 @@ var JetSmartFilterSettings = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/a
 
         // 清空下拉菜单B的内容
         filterB.innerHTML = '<option value="">Select…</option>';
+		
 
         // 根据选择的A类别动态填充B的选项
+		 if (filterAValue === 'all') {
+        location.reload(); // 刷新当前页面
+        return; // 终止后续操作
+    }
         if (filterAValue === 'authors') {
             filterData.authors.forEach(author => {
                 const option = document.createElement('option');
@@ -849,7 +856,100 @@ var JetSmartFilterSettings = {"ajaxurl":"http:\/\/192.168.1.16\/lab\/wp-admin\/a
     }
 </script>
 
-		
+			<script>
+// 假设 publications 数据定义在外部文件 publications.js 中，并已经加载
+// 例如：
+// const publications = [
+//     {
+//         title: "MeTACAST: Target- and Context-aware Spatial Selection in VR",
+//         authors: ["Lixiang Zhao", "Tobias Isenberg", "Fuqi Xie", "Hai-Ning Liang", "Lingyun Yu"],
+//         journal: "IEEE Transactions on Visualization and Computer Graphics",
+//         year: 2024,
+//         image: "wp-content/uploads/2024/08/MeTACAST.jpg-1024x575.png",
+//         link: "https://yulingyun.com/publications/metacast/"
+//     },
+//     // 更多数据...
+// ];
+
+// 搜索功能
+function performSearch() {
+    const query = document.getElementById('searchBox').value.toLowerCase();
+    const publicationList = document.getElementById('publication-list'); // 获取展示 publication 的容器
+
+    // 清空 publication 容器
+    publicationList.innerHTML = '';
+
+    // 过滤 publications 数据并根据搜索条件展示结果
+    const filteredPublications = publications.filter(publication => {
+        return (
+            publication.title.toLowerCase().includes(query) || // 搜索标题
+            publication.authors.some(author => author.toLowerCase().includes(query)) // 搜索作者
+        );
+    });
+
+    // 动态插入过滤后的 publication
+    filteredPublications.forEach(publication => {
+        const article = document.createElement('article');
+        article.classList.add('elementor-post', 'elementor-grid-item', 'post', 'type-post', 'status-publish', 'format-standard');
+
+        article.innerHTML = `
+            <div class="elementor-post__text">
+                <div class="elementor-post__content">
+                    <div data-elementor-type="wp-post" class="elementor elementor-1100" data-elementor-post-type="post">
+                        <section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-30 elementor-inner-column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-widget elementor-widget-image">
+                                            <div class="elementor-widget-container">
+                                                <img src="${publication.image}" class="attachment-large size-large" alt="${publication.title}" style="width: 100%; height: auto;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-70 elementor-inner-column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                            <div class="elementor-widget-container" style="margin-top: -25px;">
+                                                <p><span style="color: #000000; font-family: 'Saira Extra Condensed'; font-size: 32px; font-weight: 600;">
+                                                    <a href="${publication.link}" style="color: #000000; text-decoration: none;"><strong>${publication.title}</strong></a>
+                                                </span></p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                            <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                    ${publication.authors.join(', ')}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                                            <div class="elementor-widget-container" style="margin-top: -45px;">
+                                                <p style="color: #444444; font-family: Arial; font-size: 16px; font-weight: 400;">
+                                                    ${publication.journal}, ${publication.year}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        `;
+        publicationList.appendChild(article);
+    });
+
+    // 如果没有符合的结果，显示"无结果"
+    if (filteredPublications.length === 0) {
+        publicationList.innerHTML = '<p>No publications found for this search.</p>';
+    }
+}
+
+// 绑定按钮点击事件
+document.getElementById('searchButton').addEventListener('click', performSearch);
+</script>
 		
 	</body>
 
